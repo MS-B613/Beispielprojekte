@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Design Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #000018 0%, #000 100%);
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 4em;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ccff, 0 0 40px #0099ff;
+      animation: glow 2s ease-in-out infinite alternate;
+      position: relative;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ccff, 0 0 40px #0099ff;
+        transform: scale(1);
+      }
+      to {
+        text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff3399, 0 0 80px #ff66cc;
+        transform: scale(1.05);
+      }
+    }
+
+    span {
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <span>M</span><span>a</span><span>h</span><span>m</span><span>o</span><span>u</span><span>d</span>
+    &nbsp;
+    <span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+  </h1>
+</body>
+</html>
